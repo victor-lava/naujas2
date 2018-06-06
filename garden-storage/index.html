@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Garden Storage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Garden Storage</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="fruits">
+                <td colspan="5" class="table-section">Fruits</td>
+              </tr>
+              <tr>
+                <td>Apple</td>
+                <td>2017 August harvest. Akane and Adanac apple trees. Hot summer - apples has strong sweet taste.</td>
+                <td>20 kg</td>
+                <td><button class="delete-btn" value="Delete Row"><i class="material-icons">delete_forever</i></button></td>
+              </tr>
+              <tr>
+                <td>Orange</td>
+                <td>Navel oranges. 2018 April harvest. Less sun - real citrus flavor. Suitable for juices. Lack of seeds.</td>
+                <td>80 kg</td>
+                <td><button class="delete-btn" value="Delete Row"><i class="material-icons">delete_forever</i></button></td>
+              </tr>
+              <tr id="vegetables">
+                <td colspan="5" class="table-section">Vegetables</td>
+              </tr>
+              <tr>
+                <td>Carrot</td>
+                <td>Chantenay Carrots. 2017 September harvest. Size varies from 15 to 24 cm. Have broad "shoulders".</td>
+                <td>120 kg</td>
+                <td><button class="delete-btn" value="Delete Row"><i class="material-icons">delete_forever</i></button></td>
+              </tr>
+              <tr>
+                <td>Cabbage</td>
+                <td>Green Savoy cabbage.2017 October harvest. Flavor is mild. Leaves are tender.</td>
+                <td>200 kg</td>
+                <td><button class="delete-btn" value="Delete Row"><i class="material-icons">delete_forever</i></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form-container">
+          <form action="#">
+            <div class="form-label">
+              <span>Add items to storage</span>
+            </div>
+            <div class="input-container">
+              <input class="radio-btn" type="radio" name="category" value="Fruit" checked> <span class="radio-item">Fruit</span>
+              <input class="radio-btn" type="radio" name="category" value="Vegetable"> <span class="radio-item">Vegetable</span>
+            </div>
+            <div class="input-container">
+              <input id="title" placeholder="Title" type="text" required autocomplete="off" maxlength="20">
+            </div>
+            <div class="input-container">
+              <textarea id="description" placeholder="Description" autocomplete="off" maxlength="150"></textarea>
+            </div>
+            <div class="input-container"> <input id="amount" placeholder="Amount" type="text" required autocomplete="off" maxlength="10">
+            </div>
+            <div class="add-btn-container">
+              <button id="form-submit" type="submit" class="add-btn" value="New row">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
