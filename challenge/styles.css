@@ -17,6 +17,13 @@ ul {
 .nav-list {
     display: inline-block;
     padding-right: 10px;
+    text-decoration: none;
+    color:white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color:white;
 }
 
 .main-container {
