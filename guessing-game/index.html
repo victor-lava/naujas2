@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <span>Guess a word</span>
+            <span class="header-text2">letter by letter</span>
+        </div>
+        <div class="container">
+            <div class="guessed-succesfully-container">
+                <div class="word-to-guess">
+                </div>
+
+            </div>
+            <div class="input-field-container">
+                <div>
+                    <label for="letter">Guess the letter:</label>
+                    <input type="text" id="letter" name="letter" maxlength="1" placeholder="" autofocus>
+                    <input type="submit" id="submit" value="Submit" onclick="guessLetter()">
+                    <div class="success-message validation-message-hidden">
+                        Correct!
+                    </div>
+                </div>
+
+                <div class="validation-message validation-message-hidden">
+                    Incorrect. Try another letter.
+                </div>
+            </div>
+
+            <div class="winner-container validation-message-hidden">
+                Congrats! You have won!
+            </div>
+            <div>
+                <button class="new-word-button validation-message-hidden" value="Refresh Page" onClick="window.location.reload  ()">Get new word</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+
+</html>
