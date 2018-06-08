@@ -8,13 +8,17 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
     font-family: 'Poiret One', cursive;
-    font-size: 14px;
+    font-size: 28px;
     font-weight: normal;
-    color:#6B6B6D;
+    text-align: center;
+    color:black;
+
 }
 
 table th {
     padding: 0px 8px 8px 10px;
+    font-size: 14px;
+    color:#6B6B6D;
 }
 
 table td {
