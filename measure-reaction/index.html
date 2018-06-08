@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-text">Reaction time test</div>
+        </div>
+        <div id="start-game" class="container">
+           
+            <div class="start-btn-container">
+                <button class="start-btn" value="Start" onClick="switchToRedScreen()">Start</button>
+            </div>
+            <div class="game-rules">
+                    When
+                    <span class="game-rules-red">red</span> box turns
+                    <span class="game-rules-green">green</span>, click on it as quickly as you can.
+                </div>
+        </div>
+        <a href="#">
+        <div id="red-screen" class="container container-red hidden">
+            <div class="inter-text wait-for-green">
+                Wait for green...
+            </div>
+        </div>
+    </a>
+    <a href="#" onclick="switchToEndScreen()">
+        <div id="green-screen" class="container container-green hidden">
+            <div class="inter-text click">
+                Click!
+            </div>
+        </div>
+    </a>
+    <div id="end-screen" class="container container-end hidden">
+            <div class="inter-text end-screen-text">
+                Your reaction time
+            </div>
+            <div class= "reaction-time-container">
+            </div>
+            <div>
+                    <button class="repeat-btn" value="Repeat" onClick="repeatGame()">Repeat  <i class="fa fa-angle-right"></i></button>
+                </div>
+        </div>
+    </div>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
